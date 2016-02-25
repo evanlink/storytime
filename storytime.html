@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+</head>
+<body id="body">
+<h1 id="head"><span>S</span>torytime</h1>
+<p id="p">Would you like to hear a story?</p>
+<table><tr>
+	<td><button id="b1" type="button" onclick=letsRunThis()>Yes</button></td>
+</tr>
+<tr>
+	<td><button id="b2" type="button" onclick=letsNotRunThis()>No</button></td>
+</tr>
+<tr>
+	<td><button id="b3" style="display:none" type="button" onclick= ></button></td>
+</tr>
+</table>
+
+<script>
+	function letsRunThis() {
+		document.getElementById("p").innerHTML = "Awesome! I have some great ones for you to choose from! I have a story about a detective or about something else, and a third story. Which would you like to hear?"
+		document.getElementById("b1").innerHTML = "Detective Story"
+		document.getElementById("b1").onclick = runDetective
+		document.getElementById("b2").innerHTML = "Something else"
+		document.getElementById("b2").onclick = runSomethingElse
+		document.getElementById("b3").style.display = "inline"
+		document.getElementById("b3").innerHTML = "A third story"
+		document.getElementById("b3").onclick = letsRunTheThirdOne
+	}
+	function letsNotRunThis() {
+		document.getElementById("p").innerHTML = "Bummer, maybe next time."
+		document.getElementById("b1").style.display="none"
+		document.getElementById("b2").style.display="none"
+	}
+	function runDetective () {
+		document.getElementById("head").innerHTML="<span>T</span>he Detective"
+		document.getElementById("p").innerHTML= "Once there was detective..."
+		document.getElementById("b1").innerHTML = "Choice 1"
+		document.getElementById("b1").onclick = choice1Detective
+		document.getElementById("b2").innerHTML = "Choice 2"
+		document.getElementById("b2").onclick = choice2Detective
+		document.getElementById("b3").style.display ="none"
+	}
+	function runSomethingElse () {
+		document.getElementById("head").innerHTML="Some Other Story"
+		document.getElementById("p").innerHTML= "The Beginning of another story"
+		document.getElementById("b1").innerHTML = "Choice 1"
+		document.getElementById("b1").onclick = choice1SomethingElse
+		document.getElementById("b2").innerHTML = "Choice 2"
+		document.getElementById("b2").onclick = choice2SomethingElse
+		document.getElementById("b3").style.display ="none"
+	}
+	function letsRunTheThirdOne () {
+	}
+
+
+
+	<!--all the functions after here simply serve to stop the program, they need to be altered when we continue to create the program-->
+
+
+
+
+	function choice1Detective () {
+		document.getElementById("b1").onclick=""
+		document.getElementById("b2").onclick=""
+	}
+	function choice2Detective () {
+		document.getElementById("b1").onclick=""
+		document.getElementById("b2").onclick=""
+	}
+	function choice1SomethingElse () {
+		document.getElementById("b1").onclick=""
+		document.getElementById("b2").onclick=""
+	}
+	function choice2SomethingElse () {
+		document.getElementById("b1").onclick=""
+		document.getElementById("b2").onclick=""
+	}
+</script>
+</body>
+</html>

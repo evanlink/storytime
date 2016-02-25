@@ -1,0 +1,33 @@
+body {
+	background-color: #009999;
+}
+p {
+	font-size: 18px;
+	text-align: center;
+}
+table {
+	text-align: center;
+	width:70%;
+	margin-left: 15%;
+	margin-right: 15%
+
+}
+td {
+	height: 40px;
+	font-family: Verdana;
+}
+button {
+	font-size: 15px;
+	border: round solid;
+}
+button:hover {
+	background-color: #8FB7BD;
+}
+h1 {
+	text-align: center;
+	font-family: garamond, cursive;
+}
+span {
+	font-size: 60px;
+	/*color:#cc0000;*/
+}
